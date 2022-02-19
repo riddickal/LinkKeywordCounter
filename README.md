@@ -8,7 +8,12 @@ Required OS: Linux
 * In a command line pointing to the project directory, "make all", then "make run". 
 * Output will be given by a new text file in the project directory with the name of "output.txt".
 * Each line of the text file represents an occurrence of the keyword with the URL 
+* To choose a different keyword: edit "web.c". Line 156 contains the string "russia". Replace this with the desired string to act as the keyword. 
 #### Known limitations:
-curl is typically not included by default on most machines causing a fatal error when running. "sudo apt-get install libcurl4-nss-dev" will fix this.
-This tool cannot bypass websites utilizing paywalls!!!  
-Some URLs may be listed twice. This is due to images containing href values along with a caption underneath with the same value causing them to be counted twice.
+* curl is typically not included by default on most machines causing a fatal error when running. "sudo apt-get install libcurl4-nss-dev" will fix this.  
+* This tool cannot bypass websites utilizing paywalls!!!  
+* *Some* URLs may be listed twice. This is due to images containing href values along with a caption underneath with the same value causing them to be counted twice.
+
+##### Todo:
+* Add ability to accept user input for keyword and output filename. 
+* Remove duplicate URLs
