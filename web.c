@@ -153,7 +153,7 @@ void parse( web_t* web_struct )
  int x = 0;
  for (int i = 0; i<counter; i++){
 	 //int x = 0;
-	 char* ptr = strstr(allFoundLinks[i], "russia");
+	 char* ptr = strstr(allFoundLinks[i], "russia");  // Keyword
 	 if(ptr != NULL){
 		 int stringLength = strlen(allFoundLinks[i]);
 		 web_struct->links =(char**) realloc(web_struct->links,sizeof(char*)*(x+1));
